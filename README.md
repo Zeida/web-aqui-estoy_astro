@@ -1,48 +1,46 @@
-# Astro Starter Kit: Basics
+# 🐾 **¡Aquí estoy!** 🏠
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenidos a **¡Aquí estoy!**, la aplicación que ayuda a reunir a los animales perdidos con sus dueños! 🐶🐱
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 📱 Descripción
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**¡Aquí estoy!** es una app que permite a los usuarios **crear anuncios** para buscar a sus mascotas perdidas y **unirse a la búsqueda** de otros animales. Además, los usuarios pueden indicar si han visto a una mascota o si pueden ayudar a encontrarla en un horario específico. Este proyecto nace para **hacer de la comunidad una red de apoyo**, ayudando a todos los animales a regresar a su hogar de la forma más rápida posible.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+### 🔑 Características
 
-## 🚀 Project Structure
+- 📝 **Crear anuncios**: Permite que los dueños publiquen información sobre su mascota perdida, incluyendo fotos, ubicación y más.
+- 🐾 **Unirse a la búsqueda**: Otros usuarios pueden ofrecer ayuda y unirse a la búsqueda indicando si han visto a la mascota o si pueden ayudar en horarios determinados.
+- ⏰ **Alertas en tiempo real**: Recibe notificaciones para mantenerte al tanto de cualquier novedad.
+- 🌙 **Modo oscuro y claro**: Un diseño adaptable que garantiza una experiencia cómoda tanto de día como de noche.
+- 🧑‍🤝‍🧑 **Comunidad unida**: Fomenta la colaboración entre personas, creando un sentido de comunidad.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Instalación
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### **Paso 1:** Clona este repositorio:
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+`git clone https://github.com/Zeida/web-aqui-estoy.git`
 
-## 🧞 Commands
+### **Paso 2:** Navega al directorio del proyecto:
 
-All commands are run from the root of the project, from a terminal:
+`cd web-aqui-estoy`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### **Paso 3:** Instala las dependencias:
 
-## 👀 Want to learn more?
+`npm install`
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### **Paso 4:** Ejecuta la app:
+
+`npm start`
+
+## 🤝 Contribuciones
+
+¡Nos encantaría contar con tu ayuda! Si tienes ideas, mejoras o simplemente quieres hacer que más animales vuelvan a casa, siéntete libre de contribuir.
+
+1. Abre un issue para discutir ideas o problemas.
+2. Crea un pull request para añadir tus cambios.
+
+## 🌟 ¡Únete a la Comunidad!
+
+Ayuda a que más mascotas encuentren su camino de vuelta a casa. 🌍💙 ¡Juntos podemos hacer una gran diferencia!
+
+🦄 ¡Gracias por ser parte de esta comunidad!
