@@ -1,5 +1,7 @@
 ---
 import '@fontsource/luckiest-guy';
+import bird from "../icons/bird.svg?inline";
+import playful_cat from "../icons/playful_cat.svg?inline";
 ---
 <style>
 .landing-page-2 .title{
@@ -76,15 +78,19 @@ import '@fontsource/luckiest-guy';
     color:var(--color-celeste);
 </style>
 
+
 <div class="landing-page-2">
     <div class="title">
         <h2>¿Cómo funciona?</h2>
-    </div>
-
+        </div>
+        
     <div class="using-benefits-section">
+        <img src={playful_cat} alt="">
         <div class="back-line"></div>
         <div class="card-container"></div>
     </div>
+
+    <img src={bird} alt="">
 
     <div class="explanation">
         <p>¡Cada reencuentro cuenta! Da el primer paso para reunir a más mascotas con sus familias.</p>
