@@ -1,19 +1,28 @@
 ---
 import girlCatIcon from "../icons/girl_with_cat.svg?inline";
+import '@fontsource/luckiest-guy';
+//import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 ---
 
 <style> 
 .header {
     display: flex;
+
+    & p{
+        font-family: "Luckiest Guy", system-ui;
+    }
 }
+
 </style>
 
 <nav class="header">
-    <div class="web-tittle">AQUÍ ESTOY</div>
-    <div class="web-tittle">AQUÍ ESTOY</div>
-    <div class="web-tittle">AQUÍ ESTOY</div>
-    <div class="web-tittle">AQUÍ ESTOY</div>
-    <div class="web-tittle">AQUÍ ESTOY</div>
+    <p>AQUÍ ESTOY</p>
+    <a class="index.html">Home</div>
+    <div class="web-tittle">En búsqueda</div>
+    <div class="web-tittle">Encontrados</div>
+    <div class="web-tittle">About</div>
+    <div class="web-tittle">Login</div>
+    <div class="web-tittle">Registrarse</div>
 </nav>
 
 <img src={girlCatIcon} alt="">
