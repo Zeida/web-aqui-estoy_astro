@@ -1,0 +1,48 @@
+---
+import TestimonyCard from "../components/elements/TestimonialCard.astro";
+import testimonials from "../data/testimonials.json"; 
+---
+
+<div class="landing-page-3">
+  <div class="tittle">
+    <h2>Creíamos que el sofá nunca volvería a tener pelos...</h2>
+  </div>
+  <div class="landing-page-3 testimonials">
+    {testimonials.map((testimony) => <TestimonyCard testimony={testimony} />)}
+  </div>
+  <div class="landing-page-3 text-end">
+    <h2>...pero ¡aquí estoy! nos regaló un final feliz.</h2>
+  </div>
+</div>
+
+<style>
+  /* Contenedor principal para las tarjetas de testimonio */
+  .landing-page-3 {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-celeste);
+  }
+
+  /* Título de la sección */
+  .landing-page-3 .tittle {
+    font-size: 36px;
+    padding-left: 40px;
+  }
+
+  /* Contenedor de testimonios */
+  .landing-page-3.testimonials {
+    width: 100%;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    display: flex;
+  }
+
+  .landing-page-3.text-end {
+    display: flex;
+    align-items: flex-end;
+    font-size: 36px;
+    padding-right: 40px;
+  }
+</style>

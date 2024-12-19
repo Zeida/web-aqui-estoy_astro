@@ -1,0 +1,35 @@
+---
+const { instruction } = Astro.props;
+---
+
+<div class="card">
+  <h2>${instruction.title}</h2><p>${instruction.description}</p>
+</div>
+
+<style>
+  .landing-page-2 .card {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 270px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: var(--color-azul-medio);
+    justify-content: center;
+    align-items: center;
+    color: var(--color-celeste);
+    padding: 5px;
+  }
+
+  .card h2 {
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .card p {
+    display: flex;
+    font-size: 16px;
+    padding: 20px;
+  }
+</style>
