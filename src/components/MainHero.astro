@@ -1,5 +1,25 @@
 ---
 import Header from "../components/MainHeader.astro"
+import girlCatIcon from "../icons/girl_with_cat.svg?inline";
+import '@fontsource/luckiest-guy';
 ---
 
-<Header/>
+<style>
+    :root{
+    --color-azul-medio: #004481;
+    --color-azul-oscuro: #072146;
+    --color-azul-claro: #1973b8;
+    --color-celeste: #d4edfc;
+
+    }
+
+    .landing-page-1 {
+        background-color: var(--color-celeste);
+    }
+</style>
+
+<Header></Header>
+
+<div class="landing-page-1">
+    <img src={girlCatIcon} alt="">
+</div>
