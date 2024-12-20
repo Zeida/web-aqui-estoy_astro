@@ -11,6 +11,9 @@ importers:
       '@fontsource/luckiest-guy':
         specifier: ^5.1.0
         version: 5.1.0
+      '@fontsource/montserrat':
+        specifier: ^5.1.0
+        version: 5.1.0
       astro:
         specifier: ^5.0.6
         version: 5.0.8(rollup@4.28.1)(typescript@5.7.2)
@@ -338,6 +341,9 @@ packages:
 
   '@fontsource/luckiest-guy@5.1.0':
     resolution: {integrity: sha512-F1V0LnFW7lSdmkv5zHfeBZ9aI7JLfwa0g+FCv+16sw/yvABH/oqdiaZgc3sri5QKaaEaZwHeoVUuXcn2DGbuxQ==}
+
+  '@fontsource/montserrat@5.1.0':
+    resolution: {integrity: sha512-HB4+rWP9Y8g6T9RGRVJk2SvAJtx2eBAXuivvPOqQdD806/9WESUfucfH9LqFj3bGgdhNCfh0Rv0NGuwEmBLRiw==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1699,6 +1705,8 @@ snapshots:
     optional: true
 
   '@fontsource/luckiest-guy@5.1.0': {}
+
+  '@fontsource/montserrat@5.1.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:

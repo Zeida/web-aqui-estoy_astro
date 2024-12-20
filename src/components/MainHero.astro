@@ -2,6 +2,7 @@
 import Header from "../components/MainHeader.astro"
 import girlCatIcon from "../icons/girl_with_cat.svg?inline";
 import '@fontsource/luckiest-guy';
+import "@fontsource/montserrat/400.css"; // Specify weight
 ---
 
 <style>
@@ -10,16 +11,67 @@ import '@fontsource/luckiest-guy';
     --color-azul-oscuro: #072146;
     --color-azul-claro: #1973b8;
     --color-celeste: #d4edfc;
-
+    --size-imag: 700px;
     }
 
     .landing-page-1 {
+        margin : auto;
         background-color: var(--color-celeste);
+        display : flex;
+        font-family: Montserrat, sans-serif;
+        z-index : -2;
 
         /*no funciona :(*/ 
-        & .girlCatIcon {
-        max-height: 100px;
-  }
+        & img {
+            max-width: var(--size-imag);
+            max-height: var(--size-imag);
+            margin-top: 5%;
+            z-index : 1;
+        }     
+        & .container-rigth-side {
+            display : flex;
+            flex-direction: column;
+            text-align: center;
+            z-index : 0;
+
+            & h1 {
+                font-family: "Luckiest Guy", system-ui; 
+                font-size: 100px;
+                color: var(--color-azul-oscuro);
+                text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.321);
+            }
+
+            & h2, h3 {
+                font-size: 22px;
+                color: var(--color-azul-oscuro);
+                margin: auto;
+                
+            }
+
+            & h3 {
+                margin : 20px 0;
+            }
+
+            & button {
+                margin: 1% 33.5%; 
+                margin-bottom: 10%;
+                background-color : var(--color-azul-oscuro); 
+                border-radius : 15px;
+                color: var(--color-celeste);
+                padding: 3px 10px;
+                font-size: 30px;
+            }
+
+            & #container-light-blue {
+                /*Se mueve mucho el contenedor al minimizar y etc*/
+                position : absolute;
+                top: 75%; left: 2.5%; right : 2.5%;
+                background-color: white;
+                width: 95%;
+                height: 250px;
+                z-index : -1;
+            }
+        }
     }
 </style>
 
@@ -27,20 +79,16 @@ import '@fontsource/luckiest-guy';
 
 
 <div class="landing-page-1">
-    <img src={girlCatIcon} alt="">
+    <img src={girlCatIcon} alt="" >
     <div class="container-rigth-side">
-        <h1>TRAÉMOS A TU MASCOTA DE VUELTA</h1> 
         <div id="container-light-blue"></div>   
-        <h2>Conéctate con otros para encontrar mascotas pérdidas o ayudar a otros a encontrar las suyas</h2>   
+        <h1>TRAÉMOS A TU MASCOTA DE VUELTA</h1> 
+        <h2>Conéctate con otros para encontrar mascotas </h2>
+        <h2>pérdidas o ayudar a otros a encontrar las suyas</h2>   
         <h3>¡Juntos podemos lograrlo!</h3>  
         <button type="button">ÚNETE</button>
 
     </div>
-    </div>
+</div>
 
-    <div class="landing-page-2">
 
-    <div class="title">
-        <h2>¿Cómo funciona?</h2>
-
-    </div>
