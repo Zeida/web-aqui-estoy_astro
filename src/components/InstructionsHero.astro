@@ -1,7 +1,5 @@
 ---
 import "@fontsource/luckiest-guy";
-import bird from "../icons/bird.svg?inline";
-import playful_cat from "../icons/playful_cat.svg?inline";
 import InstructionCard from "../components/elements/InstructionCard.astro";
 import instructions from "../data/instructions.json";
 ---
@@ -18,7 +16,8 @@ import instructions from "../data/instructions.json";
         instructions.map((instruction) => (
           <InstructionCard instruction={instruction} />
         ))
-      }
+    }
+      <InstructionCard/>;
     </div>
   </div>
 
