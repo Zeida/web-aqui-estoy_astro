@@ -10,8 +10,8 @@ const { testimony } = Astro.props;
       class="testimony-profile-pic"
     />
     <hgroup>
-      <h1 class="name-age-pet">${testimony.testimonyHead.nameAgePet}</h1>
-      <p class="lost-address">${testimony.testimonyHead.lostAddress}</p>
+      <h1 class="name-age-pet">{testimony.testimonyHead.nameAgePet}</h1>
+      <p class="lost-address">{testimony.testimonyHead.lostAddress}</p>
     </hgroup>
   </div>
   <div class="pet-image">
@@ -20,7 +20,7 @@ const { testimony } = Astro.props;
       alt="Imagen del testimonio"
       class="testimony-pic"
     />
-    <p class="owner-thanks">${testimony.testimonyBody.ownerThanks}</p>
+    <p class="owner-thanks">{testimony.testimonyBody.ownerThanks}</p>
   </div>
   <div class="testimony-card-stats">
     <div class="views">
@@ -42,7 +42,7 @@ const { testimony } = Astro.props;
           stroke-linejoin="round"
           d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
       </svg>
-      <p class="views-number">${testimony.testimonyCardStats.viewsNumber}</p>
+      <p class="views-number">{testimony.testimonyCardStats.viewsNumber}</p>
     </div>
     <div class="people">
       <svg
@@ -60,7 +60,7 @@ const { testimony } = Astro.props;
         ></path>
       </svg>
       <p class="number-collaborations">
-        ${testimony.testimonyCardStats.numberCollaborations}
+        {testimony.testimonyCardStats.numberCollaborations}
       </p>
     </div>
   </div>
