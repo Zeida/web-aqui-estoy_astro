@@ -5,7 +5,7 @@ const { testimony } = Astro.props;
 <div class="testimony-card">
   <div class="testimony-head">
     <img
-    src={testimony.testimonyBody.testimonyPic}
+      src={testimony.testimonyBody.testimonyPic}
       alt="Foto de perfil"
       class="testimony-profile-pic"
     />
@@ -67,103 +67,98 @@ const { testimony } = Astro.props;
 </div>
 
 <style>
+  /* Estilo para las tarjetas de testimonio */
+  .testimony-card {
+    height: 441px;
+    width: 320px;
+    background-color: var(--color-azul-claro);
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
+  /* Cabecera del testimonio */
+  .testimony-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 15px;
+  }
 
-/* Estilo para las tarjetas de testimonio */
-.testimony-card {
-  height: 441px;
-  width: 320px;
-  background-color: var(--color-azul-claro);
-  border-radius: 25px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  
-}
+  hgroup {
+    width: 260px;
+    padding-left: 10px;
+  }
 
-/* Cabecera del testimonio */
-.testimony-head {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 15px;
-}
+  /* Imagen de perfil en la cabecera */
+  .testimony-profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
 
-hgroup{
-  width: 260px;
-  padding-left: 10px;
-}
+  /* Estilo para el nombre y edad de la mascota */
+  .name-age-pet {
+    font-size: 20px;
+    margin: 5px 0;
+  }
 
-/* Imagen de perfil en la cabecera */
-.testimony-profile-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
+  /* Estilo para la dirección donde se perdió la mascota */
+  .lost-address {
+    margin: 5px 0;
+  }
 
-/* Estilo para el nombre y edad de la mascota */
-.name-age-pet {
-  font-size: 20px;
-  margin: 5px 0;
-}
+  /* Cuerpo del testimonio */
+  .testimony-card .pet-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Estilo para la dirección donde se perdió la mascota */
-.lost-address {
-  margin:5px 0; 
-}
+  /* Imagen del testimonio */
+  .testimony-pic {
+    width: auto;
+    height: 191px;
+    object-fit: fill;
+  }
 
-/* Cuerpo del testimonio */
-.testimony-card .pet-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  /* Mensaje de agradecimiento del dueño */
+  .owner-thanks {
+    margin: 15px;
+  }
 
-/* Imagen del testimonio */
-.testimony-pic {
-  width: auto;
-  height: 191px;
-  object-fit: fill;
-  
-}
+  /* Estadísticas del testimonio */
+  .testimony-card-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-/* Mensaje de agradecimiento del dueño */
-.owner-thanks {
-  margin:15px
-}
+  /* Estilo para las vistas y colaboraciones */
+  .views,
+  .people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* Estadísticas del testimonio */
-.testimony-card-stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .views svg,
+  .people svg {
+    height: 25px;
+    width: 25px;
+  }
 
-/* Estilo para las vistas y colaboraciones */
-.views,
-.people {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.views svg,
-.people svg {
-  height: 25px;
-  width: 25px;
-}
-
-/* Estilo para los números de vistas y colaboraciones */
-.views-number,
-.number-collaborations {
-  padding-left: 20px;
-}
-
+  /* Estilo para los números de vistas y colaboraciones */
+  .views-number,
+  .number-collaborations {
+    padding-left: 20px;
+  }
 </style>

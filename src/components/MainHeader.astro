@@ -2,95 +2,86 @@
 
 ---
 
-<style> 
-:root{
+<div class="nav-container">
+  <nav class="header-left">
+    <p>¡AQUÍ ESTOY!</p>
+    <a href="index.astro">Home</a>
+    <a href="InSearch.astro">En búsqueda</a>
+    <a href="FoundAnimals.astro">Encontrados</a>
+    <a href="about">About</a>
+  </nav>
+
+  <nav class="header-right">
+    <a class="button-register" href="register.astro">Registrarse</a>
+    <a class="button-login" href="login.astro">Login</a>
+  </nav>
+</div>
+
+<style>
+  :root {
     --color-azul-medio: #004481;
     --color-azul-oscuro: #072146;
     --color-azul-claro: #1973b8;
     --color-celeste: #d4edfc;
+  }
 
-}
-
-.nav-container {
+  .nav-container {
     font-family: Montserrat, sans-serif;
     display: flex;
-    
+
     background-color: var(--color-azul-oscuro);
     padding-left: 10px;
-    
-    
-    a:link, :visited, :hover, :active{
-        color: var(--color-celeste);
-        text-decoration: none;
+
+    a:link,
+    :visited,
+    :hover,
+    :active {
+      color: var(--color-celeste);
+      text-decoration: none;
     }
 
     & .header-left {
-        display: flex;
-        flex-direction: row;
-        gap: 60px;
-        margin-left : 2%;
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+      margin-left: 2%;
 
-        & p{
+      & p {
         /*color: var(--color-celeste)*/
         font-family: "Luckiest Guy", system-ui;
         color: var(--color-celeste);
-        font-size : 20px;
-        }
-        & a {
+        font-size: 20px;
+      }
+      & a {
         align-items: center;
         display: flex;
-        
-        }
+      }
     }
-    
+
     & .header-right {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 2%;
+      gap: 30px;
+
+      & .button-login,
+      .button-register {
         display: flex;
-        align-items : center;
-        margin-left : auto;
-        margin-right : 2%;
-        gap: 30px;
+        border-radius: 5px;
+        background-color: var(--color-azul-claro);
+        height: 30px;
+        width: 90px;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0 0 0.2rem rgb(18, 99, 109));
+      }
 
-        & .button-login, .button-register {
-            display : flex;
-            border-radius: 5px;
-            background-color: var(--color-azul-claro);
-            height: 30px;
-            width: 90px;
-            justify-content: center;
-            align-items: center;
-            filter: drop-shadow(0 0 0.2rem rgb(18, 99, 109));
-        }
-
-        & .button-register {
-            width: 110px;
-            background-color: var(--color-celeste);
-            color: var(--color-azul-medio);
-        }
+      & .button-register {
+        width: 110px;
+        background-color: var(--color-celeste);
+        color: var(--color-azul-medio);
+      }
     }
-}
-
+  }
 </style>
-<div class="nav-container">
-    <nav class="header-left">
-        <p>¡AQUÍ ESTOY!</p>
-        <a href="index.astro">Home</a>
-        <a href="InSearch.astro">En búsqueda</a>
-        <a href="FoundAnimals.astro" >Encontrados</a>
-        <a href="about.astro" >About</a>
-
-        
-        </nav>
-
-    <nav class="header-right">
-        <a class="button-register" href="register.astro" >Registrarse</a>
-        <a class="button-login" href="login.astro" >Login</a>
-
-    </nav>
-    
-    
-</div>
-
-
-
-
-

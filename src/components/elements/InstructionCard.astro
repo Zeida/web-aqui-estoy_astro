@@ -5,13 +5,16 @@ if (!instruction) {
   console.error("No se pasó la prop 'instruction' al componente.");
 }
 ---
+
 <div class="card">
-  {instruction ? (
-    <>
-      <h2>{instruction.title}</h2>
-      <p>{instruction.description}</p>
-    </>
-  ) : (
-    <p>Sin datos disponibles.</p>
-  )}
+  {
+    instruction ? (
+      <>
+        <h2>{instruction.title}</h2>
+        <p>{instruction.description}</p>
+      </>
+    ) : (
+      <p>Sin datos disponibles.</p>
+    )
+  }
 </div>

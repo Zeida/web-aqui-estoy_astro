@@ -12,9 +12,11 @@ import instructions from "../data/instructions.json";
   <div class="using-benefits-section">
     <div class="back-line"></div>
     <div class="card-container">
-      {instructions.map((instruction) => (
-        <InstructionCard instruction={instruction} />
-      ))}
+      {
+        instructions.map((instruction) => (
+          <InstructionCard instruction={instruction} />
+        ))
+      }
     </div>
   </div>
 
@@ -31,4 +33,3 @@ import instructions from "../data/instructions.json";
     </div>
   </div>
 </div>
-
