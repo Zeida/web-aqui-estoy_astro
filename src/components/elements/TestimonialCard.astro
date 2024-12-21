@@ -5,7 +5,7 @@ const { testimony } = Astro.props;
 <div class="testimony-card">
   <div class="testimony-head">
     <img
-      src={testimony.testimonyBody.testimonyPic}
+      src={testimony.testimonyHead.profilePic}
       alt="Foto de perfil"
       class="testimony-profile-pic"
     />
@@ -69,8 +69,9 @@ const { testimony } = Astro.props;
 <style>
   /* Estilo para las tarjetas de testimonio */
   .testimony-card {
-    height: 441px;
-    width: 320px;
+    font-family: Montserrat, sans-serif;
+    height: 600px;
+    width: 400px;
     background-color: var(--color-azul-claro);
     border-radius: 25px;
     overflow: hidden;
@@ -98,8 +99,8 @@ const { testimony } = Astro.props;
     justify-content: center;
     align-items: center;
     padding: 5px;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
   }
 
@@ -115,7 +116,7 @@ const { testimony } = Astro.props;
   }
 
   /* Cuerpo del testimonio */
-  .testimony-card .pet-image {
+  .pet-image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,13 +126,14 @@ const { testimony } = Astro.props;
   /* Imagen del testimonio */
   .testimony-pic {
     width: auto;
-    height: 191px;
+    height: 300px;
     object-fit: fill;
   }
 
   /* Mensaje de agradecimiento del dueño */
   .owner-thanks {
     margin: 15px;
+    font-size: 20px;
   }
 
   /* Estadísticas del testimonio */

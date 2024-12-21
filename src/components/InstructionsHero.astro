@@ -1,5 +1,5 @@
 ---
-import "@fontsource/luckiest-guy";
+
 import InstructionCard from "../components/elements/InstructionCard.astro";
 import instructions from "../data/instructions.json";
 ---
@@ -33,3 +33,55 @@ import instructions from "../data/instructions.json";
     </div>
   </div>
 </div>
+
+<style>
+
+  .landing-page-2{
+    padding: 100px 0 130px 0;
+  }
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 50px;
+    font-style: normal;
+    color: var(--color-azul-oscuro);
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .call-to-action {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+
+  .call-to-action-text {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-azul-medio);
+    border-radius: 50px;
+    width: 800px;
+    margin-bottom: 50px;
+  }
+
+  .call-to-action-text h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 40px;
+    color: var(--color-celeste);
+    letter-spacing: 3px;
+  }
+  .explanation {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin: 30px;
+  }
+</style>

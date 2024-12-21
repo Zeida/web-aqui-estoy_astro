@@ -7,10 +7,10 @@ import testimonials from "../data/testimonials.json";
   <div class="tittle">
     <h2>Creíamos que el sofá nunca volvería a tener pelos...</h2>
   </div>
-  <div class="landing-page-3 testimonials">
+  <div class="testimonials">
     {testimonials.map((testimony) => <TestimonyCard testimony={testimony} />)}
   </div>
-  <div class="landing-page-3 text-end">
+  <div class="text-end">
     <h2>...pero ¡aquí estoy! nos regaló un final feliz</h2>
   </div>
 </div>
@@ -21,29 +21,34 @@ import testimonials from "../data/testimonials.json";
     display: flex;
     flex-direction: column;
     background: var(--color-celeste);
+    align-items: center;
+    padding: 20px 100px 20px 100px;
   }
 
   /* Título de la sección */
-  .landing-page-3 .tittle {
+  .tittle {
     font-size: 36px;
-    padding-left: 40px;
     font-style: italic;
+    display:1;
+    width: 100%;
+    justify-content: flex-start;
+    margin:50px;
   }
 
   /* Contenedor de testimonios */
-  .landing-page-3.testimonials {
+  .testimonials {
     width: 100%;
     height: auto;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content:space-between;
     gap: 20px;
     display: flex;
   }
 
-  .landing-page-3.text-end {
-    display: flex;
-    align-items: flex-end;
-    font-size: 36px;
-    padding-right: 40px;
-  }
+  .text-end {
+  font-size: 36px;
+  width: 100%;
+  text-align: right;
+  margin:50px;
+}
 </style>

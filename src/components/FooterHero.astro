@@ -24,29 +24,36 @@
 
 <style>
   /* Footer */
+  .footer{
+    background-color: var(--color-azul-oscuro);
+    color:white;
+    padding:20px;
+  }
   .footer-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 30px;
+    font-family: Montserrat, sans-serif;
+    
   }
 
-  .footer-menu .social-networks,
-  .footer-menu .about-us-section,
-  .footer-menu .more-info-section,
-  .footer-menu .help-section {
-    font-size: 20px;
+  .social-networks,
+  .about-us-section,
+  .more-info-section,
+  .help-section {
+    font-size: 24px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .help-section .section-tittle,
-  .more-info-section .section-tittle,
-  .about-us-section .section-tittle {
+  .section-tittle,
+  .section-tittle,
+  .section-tittle {
     font-weight: bold;
-  }
-
-  .footer-menu a {
+    align-items: flex-start;
+    padding-bottom: 32px;
   }
 
   .footer-end-text p {
@@ -54,6 +61,7 @@
     justify-content: center;
     font-weight: bold;
     font-size: 25px;
-    margin-top: 80px;
+    font-family: Montserrat, sans-serif;
+    padding:60px 0 10px; 
   }
 </style>

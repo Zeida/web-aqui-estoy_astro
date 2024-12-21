@@ -1,3 +1,6 @@
+@import "@fontsource/luckiest-guy";
+@import "@fontsource/montserrat/400.css"; 
+
 :root {
     --color-azul-medio: #004481;
     --color-azul-oscuro: #072146;
@@ -6,72 +9,9 @@
     --size-imag: 700px;
 }
 
-.landing-page-2 .card {
-    display: flex;
-    flex-direction: column;
-    height: 270px;
-    width: 270px;
-    overflow: hidden;
-    border-radius: 50px;
-    background-color: var(--color-azul-medio);
-    justify-content: center;
-    align-items: center;
-    color: var(--color-celeste);
-    padding: 5px;
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ocupa el 100% de la altura de la ventana *//* Evita scroll horizontal si hay algún desbordamiento */
   }
-
-  .card h2 {
-    display: flex;
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  .card p {
-    display: flex;
-    font-size: 16px;
-    padding: 20px;
-  }
-  .landing-page-2 .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: "Luckiest Guy", cursive;
-    font-size: 50px;
-    font-style: normal;
-    color: var(--color-azul-oscuro);
-  }
-  .landing-page-2 .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .call-to-action {
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-  }
-
-  .call-to-action-text {
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-azul-medio);
-    border-radius: 50px;
-    width: 800px;
-    margin-bottom: 50px;
-  }
-
-  .call-to-action-text h2 {
-    font-family: "Luckiest Guy", cursive;
-    font-size: 40px;
-    color: var(--color-celeste);
-  }
-  .explanation {
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    margin: 30px;
-  }
+  
