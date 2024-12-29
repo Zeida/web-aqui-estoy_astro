@@ -11,10 +11,12 @@ import girlCatIcon from "../icons/girl_with_cat.svg?inline";
   <div class="container-rigth-side">
     <h1>TRAÉMOS A TU MASCOTA DE VUELTA</h1>
     <div id="container-light-blue">
-      <h2>Conéctate con otros para encontrar mascotas</h2>
-      <h2>pérdidas o ayudar a otros a encontrar las suyas</h2>
-      <h3>¡Juntos podemos lograrlo!</h3>
-      <button type="button">ÚNETE</button>
+      <div class="elements-container">
+        <h2 class="text-inside-absolute">Conéctate con otros para encontrar mascotas</h2>
+        <h2>pérdidas o ayudar a otros a encontrar las suyas</h2>
+        <h3>¡Juntos podemos lograrlo!</h3>
+        <button type="button">ÚNETE</button>
+      </div>
     </div>
     
   </div>
@@ -48,21 +50,38 @@ import girlCatIcon from "../icons/girl_with_cat.svg?inline";
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.321);
       }
 
+      & .elements-container {
+        display : flex;
+        flex-direction: column;
+        margin-left: 50%;
+        margin-bottom: 5px;
+        align-items: center;
+      }
+
       & h2,
-      h3 {
+      h3{
         font-size: 22px;
         color: var(--color-azul-oscuro);
-        margin-right: 0;
+        width: 600px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      & h3 {
+        margin-top: 15px;
+      }
+
+      & .text-inside-absolute{
+        margin-top: 25px;
       }
 
       & button {
-        margin: 1% 33.5%;
-        margin-bottom: 10%;
         background-color: var(--color-azul-oscuro);
         border-radius: 15px;
         color: var(--color-celeste);
-        padding: 3px 10px;
+        padding: 5px 20px;
         font-size: 30px;
+        margin-top: 15px;
       }
 
       & #container-light-blue {
@@ -75,8 +94,7 @@ import girlCatIcon from "../icons/girl_with_cat.svg?inline";
         width: 95%;
         height: 250px;
         z-index: -1;
-        display : flex;
-        flex-direction: column;
+        
       }
     }
   }
