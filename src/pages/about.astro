@@ -1,11 +1,13 @@
 ---
 import "../styles/global.css";
+import MainHeader from "../components/MainHeader.astro";
 ---
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - ¡Aquí Estoy!</title>
   </head>
+  <MainHeader />
 <div class="about-page">
   <div class="about-header">
     <h1>Sobre Nosotras</h1>
@@ -14,16 +16,16 @@ import "../styles/global.css";
 
   <div class="about-content">
     <section class="project-info">
-      <h2>¿Qué es **¡Aquí estoy!**?</h2>
+      <h2>¿Qué es ¡Aquí estoy!?</h2>
       <p>
-        **¡Aquí estoy!** es una aplicación creada con el objetivo de ayudar a reunir a los animales perdidos con sus dueños. Permite a los usuarios crear anuncios para buscar a sus mascotas perdidas, unirse a la búsqueda de otros animales y ofrecer ayuda en horarios específicos. Este proyecto nace para hacer de la comunidad una red de apoyo, ayudando a todos los animales a regresar a su hogar lo más rápido posible.
+        ¡Aquí estoy! es una aplicación creada con el objetivo de ayudar a reunir a los animales perdidos con sus dueños. Permite a los usuarios crear anuncios para buscar a sus mascotas perdidas, unirse a la búsqueda de otros animales y ofrecer ayuda en horarios específicos. Este proyecto nace para hacer de la comunidad una red de apoyo, ayudando a todos los animales a regresar a su hogar lo más rápido posible.
       </p>
       <div class="features">
         <h3>Características:</h3>
         <ul>
-          <li>📝 **Crear anuncios** para mascotas perdidas.</li>
-          <li>🐾 **Unirse a la búsqueda** de otros animales.</li>
-          <li>🧑‍🤝‍🧑 **Comunidad unida**: colaboración entre personas.</li>
+          <li>📝 Crear anuncios para mascotas perdidas.</li>
+          <li>🐾 Unirse a la búsqueda de otros animales.</li>
+          <li>🧑‍🤝‍🧑 Comunidad unida: colaboración entre personas.</li>
         </ul>
       </div>
     </section>
@@ -41,12 +43,12 @@ import "../styles/global.css";
     <section class="what-we-learned">
       <h2>Lo que Hemos Aprendido</h2>
       <p>
-        Durante el desarrollo de **¡Aquí estoy!**, hemos adquirido valiosas habilidades en:
+        Durante el desarrollo de <b>¡Aquí estoy!</b>, hemos adquirido valiosas habilidades en:
       </p>
       <ul>
         <li>Diseño de interfaces accesibles y atractivas.</li>
         <li>Desarrollo web responsive con tecnologías modernas como Astro, Vue, JavaScript, html y CSS.</li>
-        <li>Trabajo colaborativo usando GitHub.</li>
+        <li>Trabajo colaborativo usando GitHub y Trello.</li>
         <li>Implementación de un enfoque centrado en el usuario y la comunidad.</li>
       </ul>
     </section>
@@ -59,16 +61,29 @@ import "../styles/global.css";
 
 <style>
   .about-page {
-    font-family: "Luckiest Guy", cursive;
-    color: var(--color-celeste);
+    background-color:var(--color-celeste) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
     margin: 0 auto;
     max-width: 1200px;
     padding: 50px;
   }
 
   .about-header {
-    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 30px;
+  }
+
+  .about-header img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
   }
 
   .about-header h1 {
@@ -82,7 +97,7 @@ import "../styles/global.css";
   }
 
   .about-content {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .project-info,
@@ -116,10 +131,11 @@ import "../styles/global.css";
   }
 
   .about-footer {
-    background-color: var(--color-azul-medio);
+    font-family: "Luckiest Guy", cursive;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
+    font-size: 50px;
   }
 
   .about-footer h3 {
@@ -127,3 +143,4 @@ import "../styles/global.css";
     color: var(--color-celeste);
   }
 </style>
+
