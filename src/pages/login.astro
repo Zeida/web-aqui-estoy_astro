@@ -1,0 +1,233 @@
+--- 
+import google from "../assets/google.svg?url";
+import petlogin from "../assets/pet-login.svg?url";
+import "../styles/global.css";
+import MainHeader from "../components/MainHeader.astro";
+import eyetracking from "../assets/eye-tracking.svg?url";
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión - ¡Aquí Estoy!</title>
+</head>
+<MainHeader />
+<div class="split-screen">
+  <div class="left-side">
+    <h1>Tu comunidad, su camino a casa.</h1>
+    <h2>
+      Conecta, busca, y encuentra a tu mascota perdida mientras construimos una
+      comunidad solidaria.
+    </h2>
+    <img src={petlogin} alt="Icono" class="pet-svg-icon" />
+  </div>
+  <div class="right-side">
+    <form class="login-form">
+      <h2>BIENVENIDO</h2>
+      <button class="google-login">
+        <img src={google} alt="Google Icon" class="svg-icon" /> Continuar con Google
+      </button>
+      <div class="or-container">
+        <div class="separator-line"></div>
+        <div class="or-separator">o</div>
+        <div class="separator-line"></div>
+      </div>
+      <label class="form-label">Nombre de usuario o dirección de correo electrónico</label>
+      <input type="email" required class="input-field" />
+      <label class="form-label password-label">
+        Contraseña
+        <button type="button" class="password-toggle">
+          <img src={eyetracking} alt="Mostrar/Ocultar contraseña" />
+        </button>
+      </label>
+      <input type="password" required class="input-field" />
+      <div class="form-links password">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+      <button type="submit" class="login-button">Acceder</button>
+      <div class="form-links signin">
+        <a href="#">¿Aún no tienes cuenta? Regístrate</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<style>
+  
+  body {
+    margin: 0;
+  }
+
+  .split-screen {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-side {
+    background-color: var(--color-celeste);
+    color: var(--color-azul-oscuro);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-side h1 {
+    font-size: 2.5rem;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-family: "Luckiest Guy", system-ui;
+    letter-spacing: 2px;
+  }
+
+  .left-side h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .right-side {
+    background-color: var(--color-azul-claro);
+  }
+
+  .svg-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  .pet-svg-icon {
+    width: 500px;
+    height: auto;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .login-form h2 {
+    font-family: "Luckiest Guy", system-ui;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+
+  .google-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: black  ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px;
+  }
+  .login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-celeste);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .or-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .separator-line {
+    height: 1px;
+    width: 100px;
+    background-color: #ccc;
+  }
+
+  .or-separator {
+    margin: 0 10px;
+    font-size: 20px;
+    color: var(--color-azul-oscuro);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .form-label {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .password-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .input-field {
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 500px;
+
+  }
+
+  .form-links {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--color-azul-oscuro);
+  width: 100%; 
+  display: flex;
+  &.password{
+    justify-content: flex-end;
+  } 
+  &.signin{
+    justify-content: flex-start;
+  }
+  & a{
+    color: var(--color-azul-oscuro);
+    text-decoration: none;
+    margin: 5px;
+    font-size: 15px;
+  }
+}
+
+
+.form-links a {
+  
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}
+
+</style>

@@ -1,21 +1,6 @@
 [
   {
     "testimonyHead": {
-      "profilePic": "images/profile1.jpg",
-      "nameAgePet": "Max (9 años)",
-      "lostAddress": "Ofra, Tenerife"
-    },
-    "testimonyBody": {
-      "testimonyPic": "images/testimony1.webp",
-      "ownerThanks": "Gracias a esta maravillosa comunidad, encontramos a Max en menos de 48 horas. ¡No puedo expresar mi gratitud suficiente!"
-    },
-    "testimonyCardStats": {
-      "viewsNumber": 1200,
-      "numberCollaborations": 45
-    }
-  },
-  {
-    "testimonyHead": {
       "profilePic": "images/profile2.jpg",
       "nameAgePet": "Luna (2 años)",
       "lostAddress": "Moya, Las Palmas"
@@ -37,6 +22,35 @@
     },
     "testimonyBody": {
       "testimonyPic": "images/testimony3.webp",
+      "ownerThanks": "Nunca pensé que volvería a ver a Coco. ¡Gracias a todos los que compartieron y ayudaron en la búsqueda!"
+    },
+    "testimonyCardStats": {
+      "viewsNumber": 1570,
+      "numberCollaborations": 78
+    }
+  },
+  {
+    "testimonyHead": {
+      "profilePic": "images/profile4.jpg",
+      "nameAgePet": "Coco (3 años)",
+      "lostAddress": "Telde, Las Palmas"
+    },
+    "testimonyBody": {
+      "testimonyPic": "images/testimony4.jpg",
+      "ownerThanks": "Nunca pensé que volvería a ver a Coco. ¡Gracias a todos los que compartieron y ayudaron en la búsqueda!"
+    },
+    "testimonyCardStats": {
+      "viewsNumber": 1570,
+      "numberCollaborations": 78
+    }
+  },{
+    "testimonyHead": {
+      "profilePic": "images/profile5.jpg",
+      "nameAgePet": "Coco (3 años)",
+      "lostAddress": "Telde, Las Palmas"
+    },
+    "testimonyBody": {
+      "testimonyPic": "images/testimony6.jpg",
       "ownerThanks": "Nunca pensé que volvería a ver a Coco. ¡Gracias a todos los que compartieron y ayudaron en la búsqueda!"
     },
     "testimonyCardStats": {
