@@ -6,6 +6,59 @@ import "../styles/global.css";
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 - ¡Aquí Estoy!</title>
+  <title>¡Aquí Estoy!</title>
 </head>
 <MainHeader />
+
+<div class="container-form">
+  <form>
+    <label for="name">Nombre:
+      <input type="text" name="name" id="" />
+    </label>
+    
+    <label class="last-time">Última vez visto
+      <label for="date"> Fecha:
+        <input type="date" name="date" />
+      </label>
+      <label for="time">Hora:
+        <input type="text" />
+      </label>
+    </label>
+
+    <label for="country">País:
+      <input type="text" name="country" />
+    </label>
+
+    <label for="city">Ciudad:
+      <input type="text" name="city" />
+    </label>
+
+    <label for="street">Calle:
+      <input type="text" name="street" />
+    </label>
+    
+    <label class="con">Contacto
+      <label for="number">Número:
+        <input type="text" name="number">
+      </label>
+
+      <label for="email">Email:
+        <input type="text" name="email">
+      </label>
+    </label>
+
+  </form>
+</div>
+
+<style>
+form {
+  display : flex;
+  flex-direction: column;
+}
+
+.last-time {
+  display : flex;
+  flex-direction: column;
+}
+
+</style>
