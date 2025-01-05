@@ -10,20 +10,25 @@ import "../styles/global.css";
 </head>
 <MainHeader />
 
-<div class="container-form">
+<div class="form-container">
   <form>
     <label for="name">Nombre:
       <input type="text" name="name" id="">
     </label>
+    <div class="date-hour">
+      <div>
+        <label>Última vez visto </label>
+      </div>
+      <div>
+        <label for="date"> Fecha:
+          <input type="date" name="date">
+        </label>
+        <label for="time">Hora:
+          <input type="text">
+        </label>
+      </div>
+    </div>
     
-    <label class="last-time">Última vez visto
-      <label for="date"> Fecha:
-        <input type="date" name="date">
-      </label>
-      <label for="time">Hora:
-        <input type="text">
-      </label>
-    </label>
 
     <label for="country">País:
       <input type="text" name="country">
@@ -37,41 +42,60 @@ import "../styles/global.css";
       <input type="text" name="street">
     </label>
     
-    <label class="con">Contacto
-      <label for="number">Número:
-        <input type="text" name="number">
-      </label>
+    <div class="form-contact">
+      <div>
+        <label>Contacto</label>
+      </div>
+      <div>
+        <label for="number">Número:
+          <input type="text" name="number">
+        </label>
+        <label for="email">Email:
+          <input type="text" name="email">
+        </label>
+      </div>  
+    </div>
+    
+    <div class="form-description">
+      <div>
+        <label for="description">Descripción:</label>
+      </div>
+      <div>
+        <input type="text" name="description">
+        <p> Pequeña descripción sobre su compañera/o (datos que puedan distinguirle)</p>
+      </div>
+    </div>
 
-      <label for="email">Email:
-        <input type="text" name="email">
-      </label>
-    </label>
-
-    <label for="description">Descripción:
-      <input type="text" name="description">
-      <p> Pequeña descripción sobre su compañera/o (datos que puedan distinguirle)</p>
-      
-    </label>
-
-    <label for="file">Foto:
-      <input type="file" name="file">
-      <p>Asegúrese de que se le distinga
-        lo mejor posible,</p>
-     <p>una buena foto da más oportunidades de encontrarle</p>
-    </label>
+    <div class="form-file-photo">
+      <div>
+        <label for="file">Foto:</label>
+      </div>
+      <div>
+        <input type="file" name="file">
+        <p>Asegúrese de que se le distinga
+          lo mejor posible,</p>
+       <p>una buena foto da más oportunidades de encontrarle</p>
+      </div>
+        
+    </div>
+    
 
   </form>
 </div>
 
 <style>
-form {
-  display : flex;
-  flex-direction: column;
+:root {
+  background-color: var(--color-celeste);
 }
-
-.last-time {
-  display : flex;
-  flex-direction: column;
+.form-container {
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: white;
+  width: 80%;
+  height: 90%;
+  padding: 1%;
+  display: flex;
 }
 
 </style>
