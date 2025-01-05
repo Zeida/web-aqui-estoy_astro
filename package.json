@@ -12,5 +12,8 @@
     "@fontsource/luckiest-guy": "^5.1.0",
     "@fontsource/montserrat": "^5.1.0",
     "astro": "^5.1.1"
+  },
+  "devDependencies": {
+    "@iconify-json/material-symbols": "^1.2.12"
   }
 }
