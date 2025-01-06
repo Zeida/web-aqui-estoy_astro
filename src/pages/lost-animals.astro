@@ -1,5 +1,6 @@
 ---
-import lostAnimalCard from "../components/elements/LostCard.astro";
+import lostCard from "../components/elements/LostCard.astro";
+import lostAnimals from "../data/lostanimals.json";
 ---
 
 <div class="container-lostanimals">
@@ -12,6 +13,12 @@ import lostAnimalCard from "../components/elements/LostCard.astro";
     <option value="maspalomas">Maspalomas</option>
   </select>
   <div class="lost-animal-cards">
-    <lostAnimalCard/>
+    
+    {
+      lostAnimals.map((animal) => (
+        <lostCard lostanimal={animal} />
+      ))
+    }
+  
   </div>
 </div>
