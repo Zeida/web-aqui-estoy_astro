@@ -1,5 +1,6 @@
 ---
-import lostCard from "../components/elements/LostCard.astro";
+/*SUPER IMPORTANTE PONER EN MAYUS LA PRIMERA LETRA DEL COMPONENTE*/
+import LostCard from "../components/elements/LostCard.astro";
 import lostAnimals from "../data/lostanimals.json";
 ---
 
@@ -16,7 +17,7 @@ import lostAnimals from "../data/lostanimals.json";
     
     {
       lostAnimals.map((animal) => (
-        <lostCard lostanimal={animal} />
+        <LostCard lostanimal={animal} />
       ))
     }
   
