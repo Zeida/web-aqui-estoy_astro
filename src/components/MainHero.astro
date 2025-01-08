@@ -7,9 +7,9 @@ import girlCatIcon from "../icons/girl_with_cat.svg?inline";
 <Header />
 
 <div class="landing-page-1">
-  <img src={girlCatIcon} alt="" />
-  <div class="container-rigth-side">
-    <h1>TRAÉMOS A TU MASCOTA DE VUELTA</h1>
+  <img src={girlCatIcon} alt="Dibujo de una chica con un gato" /> <!-- Comentario: Agregué un atributo alt descriptivo para accesibilidad -->
+  <div class="container-right-side"> <!-- Comentario: Cambié el nombre del contenedor de "container-rigth-side" a "container-right-side" (error ortográfico) -->
+    <h1>TRAEMOS A TU MASCOTA DE VUELTA</h1>
     <div id="container-light-blue">
       <div class="elements-container">
         <h2 class="text-inside-absolute">Conéctate con otros para encontrar mascotas</h2>
@@ -18,84 +18,137 @@ import girlCatIcon from "../icons/girl_with_cat.svg?inline";
         <button type="button">ÚNETE</button>
       </div>
     </div>
-    
   </div>
 </div>
-
 
 <style>
   .landing-page-1 {
     margin: auto;
     background-color: var(--color-celeste);
     display: flex;
+    flex-direction: column; /* Para pantallas pequeñas */
+    align-items: center;
     font-family: Montserrat, sans-serif;
     z-index: -2;
+    gap: 20px;
+  }
 
-    & img {
-      max-width: var(--size-imag);
-      max-height: var(--size-imag);
-      margin-top: 5%;
-      z-index: 1;
+  .landing-page-1 img {
+    max-width: 100%;
+    max-height: 300px; /* Tamaño ajustable para móviles */
+    margin-top: 5%;
+    z-index: 1;
+  }
+
+  .container-right-side {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 0;
+    width: 90%; /* Ajusta el ancho para móviles */
+    align-items: center;
+  }
+
+  .container-right-side h1 {
+    font-family: "Luckiest Guy", system-ui;
+    font-size: 2rem; /* Tamaño ajustable para móviles */
+    color: var(--color-azul-oscuro);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.321);
+    margin-bottom: 20px;
+  }
+
+  .elements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .elements-container h2,
+  .elements-container h3 {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto para móviles */
+    color: var(--color-azul-oscuro);
+    width: 100%; /* Ajusta el ancho para dispositivos pequeños */
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .elements-container h3 {
+    margin-top: 15px;
+  }
+
+  .text-inside-absolute {
+    margin-top: 25px;
+  }
+
+  .elements-container button {
+    background-color: var(--color-azul-oscuro);
+    border-radius: 15px;
+    color: var(--color-celeste);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .elements-container button:hover {
+    background-color: var(--color-azul-claro);
+  }
+
+  #container-light-blue {
+    position: relative; /* Cambiado para evitar problemas de superposición */
+    background-color: white;
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo */
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px;
+    margin-top: 20px;
+    z-index: -1;
+  }
+
+  /* Responsividad para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .container-right-side h1 {
+      font-size: 1.8rem;
     }
-    & .container-rigth-side {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      z-index: 0;
 
-      & h1 {
-        font-family: "Luckiest Guy", system-ui;
-        font-size: 100px;
-        color: var(--color-azul-oscuro);
-        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.321);
-      }
+    .elements-container h2,
+    .elements-container h3 {
+      font-size: 1rem;
+    }
 
-      & .elements-container {
-        display : flex;
-        flex-direction: column;
-        margin-left: 50%;
-        margin-bottom: 5px;
-        align-items: center;
-      }
+    .elements-container button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
 
-      & h2,
-      h3{
-        font-size: 22px;
-        color: var(--color-azul-oscuro);
-        width: 600px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
+    #container-light-blue {
+      width: 90%; /* Ajusta el ancho para móviles */
+    }
+  }
 
-      & h3 {
-        margin-top: 15px;
-      }
+  /* Responsividad para pantallas muy pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .landing-page-1 img {
+      max-height: 200px;
+    }
 
-      & .text-inside-absolute{
-        margin-top: 25px;
-      }
+    .container-right-side h1 {
+      font-size: 1.5rem;
+    }
 
-      & button {
-        background-color: var(--color-azul-oscuro);
-        border-radius: 15px;
-        color: var(--color-celeste);
-        padding: 5px 20px;
-        font-size: 30px;
-        margin-top: 15px;
-      }
+    .elements-container h2,
+    .elements-container h3 {
+      font-size: 0.9rem;
+    }
 
-      & #container-light-blue {
-        /*Se mueve mucho el contenedor al minimizar y etc*/
-        position: absolute;
-        /*top: 75%; left: 2.5%; right : 2.5%;*/
-        top: 550px;
-        left: 40px;
-        background-color: white;
-        width: 95%;
-        height: 250px;
-        z-index: -1;
-        
-      }
+    .elements-container button {
+      font-size: 0.9rem;
     }
   }
 </style>
