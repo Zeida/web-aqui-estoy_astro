@@ -1,10 +1,9 @@
 ---
-import google from "../assets/google.svg?url";
 import "../styles/global.css";
 import MainHeader from "../components/MainHeader.astro";
-import eyetracking from "../assets/eye-tracking.svg?url";
+import EyeTracking from "../icons/eye-tracking.astro";
+import { Icon } from 'astro-icon/components';
 ---
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +23,7 @@ import eyetracking from "../assets/eye-tracking.svg?url";
       <form class="login-form">
         <h2>BIENVENIDO</h2>
         <button class="google-login">
-          <img src={google} alt="Google Icon" class="svg-icon" /> Continuar con Google
+          <Icon name="google" /> Continuar con Google
         </button>
         <div class="or-container">
           <div class="separator-line"></div>
@@ -38,7 +37,7 @@ import eyetracking from "../assets/eye-tracking.svg?url";
         <label class="form-label password-label">
           Contraseña
           <button type="button" class="password-toggle">
-            <img src={eyetracking} alt="Mostrar/Ocultar contraseña" />
+            <EyeTracking>
           </button>
         </label>
         <input type="password" required class="input-field" />
@@ -78,7 +77,7 @@ import eyetracking from "../assets/eye-tracking.svg?url";
 
   .left-side {
     background-color: var(--color-celeste);
-    background-image: url("images/pet-login.svg");
+    background-image: url("images/petLogin.svg");
     color: var(--color-azul-oscuro);
     text-align: center;
     display: flex;
@@ -104,7 +103,7 @@ import eyetracking from "../assets/eye-tracking.svg?url";
     background-color: var(--color-azul-claro);
   }
 
-  .svg-icon {
+  Icon {
     width: 15px;
     height: 15px;
     margin-right: 10px;
