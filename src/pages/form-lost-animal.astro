@@ -11,75 +11,64 @@ import "../styles/global.css";
 <MainHeader />
 
 <div class="form-container">
-  <div class="form-structure">
   <h1>Formulario de búsqueda</h1>
+  <p>Cuéntanos todos los detalles sobre tu familiar peludo ...</p>
   <form>
     <label for="name">Nombre:
       <input type="text" name="name" id="">
     </label>
-    <div class="form-date">
-      <div>
+    
         <label>Última vez visto </label>
-      </div>
-      <div class="date-hour">
         <label for="date"> Fecha:
           <input type="date" name="date">
         </label>
         <label for="time">Hora:
-          <input type="text">
+          <input type="text" placeholder="Ejemplo 00:00">
         </label>
-      </div>
-    </div>
+        
+
     
 
     <label for="country">País:
       <input type="text" name="country">
     </label>
+    
 
     <label for="city">Ciudad:
       <input type="text" name="city">
     </label>
+    
 
     <label for="street">Calle:
       <input type="text" name="street">
     </label>
     
-    <div class="form-contact">
-      <div>
-        <label>Contacto</label>
-      </div>
-      <div>
+    
+        <label class="contact-container">Contacto</label>
         <label for="number">Número:
           <input type="text" name="number">
         </label>
+        
         <label for="email">Email:
           <input type="text" name="email">
         </label>
-      </div>  
-    </div>
-    
-    <div class="form-description">
-      <div>
-        <label for="description">Descripción:</label>
-      </div>
-      <div>
-        <input type="text" name="description">
-        <p> Pequeña descripción sobre su compañera/o (datos que puedan distinguirle)</p>
-      </div>
-    </div>
+        
 
-    <div class="form-file-photo">
-      <div>
-        <label for="file">Foto:</label>
-      </div>
-      <div>
-        <input type="file" name="file">
-        <p>Asegúrese de que se le distinga
-          lo mejor posible,</p>
-       <p>una buena foto da más
-         oportunidades de encontrarle</p>
-      </div>
-    </div>
+        <label for="description">Descripción:
+          <input type="text" name="description">
+        <p> Pequeña descripción sobre su compañera/o (datos que puedan distinguirle)</p>
+        </label>
+
+ 
+        <label for="file">Foto:
+          <input type="file" name="file">
+          <p>Asegúrese de que se le distinga
+            lo mejor posible,</p>
+         <p>una buena foto da más
+           oportunidades de encontrarle</p>
+        </label>
+
+      
   </form>
 
   <p>*campo obligatorio</p>
@@ -99,41 +88,20 @@ import "../styles/global.css";
   width: 80%;
   height: 90%;
   padding: 1%;
-  display: grid;
   font-family: Montserrat, sans-serif;
+  display : grid;
+  justify-items: center;
+  
 
-  & .form-structure{
-  margin: auto;
-  max-width: 90%;
-  }
-
-  & input {
-    margin-left: 5%;
-  }
-
-  & .form-date{
-    
-  }
-
-    & .date-hour{
-      width: 120px;
-      display: grid;
-      
-
-    & label {
-  padding: 5px 10px;
-  padding-top: 0;
+form {
+  display: grid;
+  grid-template-columns: 400px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  
+  & label {
+    display: inline-grid;
+    margin-bottom: 1rem;
 }
-    }
-  }
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-
-
 
 </style>
