@@ -1,0 +1,28 @@
+{
+  "image": "images/Chewie.png",
+  "name": "Chewie, golden retriever",
+  "location": "Endor, bosque lunar",
+  "date": "11/01/2025 a las 14:30",
+  "contact": "333444555 / chewiefinder@republica.com",
+  "description": "Se ha perdido un Golden Retriever en los bosques de Endor. Es de tamaño grande, tiene pelaje dorado brillante como los soles de este planeta y es muy cariñoso. Se llama Chewie y lleva un collar verde con una placa de identificación galáctica. Si lo ves o tienes información sobre su paradero, por favor, contacta con nosotros a través de la red holocomunicante.",
+  "reward": "500 créditos galácticos",
+  "author": "Obi-Wan Kenobi, maestro Jedi",
+  "comments": [
+    {
+      "name": "Darth Vader",
+      "text": "He detectado una presencia extraña en la luna forestal de Endor. El perro que mencionas podría ser Chewie. ¿Tiene alguna marca especial o se parece al perro de un Wookiee? ¡Que la Fuerza nos ayude a encontrarlo!"
+    },
+    {
+      "name": "Yoda",
+      "text": "Perdido, tu perro está. En los árboles de Endor, su camino podría estar. Sabio o juguetón es, como un joven Jedi. Información importante, debes compartir."
+    },
+    {
+      "name": "Han Solo",
+      "text": "¡Vaya! Estuve en las afueras de la luna de Endor, pero no vi a ningún Golden Retriever. Si Chewie es tan fiel como un Wookiee, seguro lo encontraremos. ¿Puedo ofrecer una recompensa en créditos galácticos? ¡Que el Halcón Milenario nos ayude!"
+    },
+    {
+      "name": "Obi-Wan Kenobi",
+      "text": "Gracias por sus comentarios. La búsqueda de Chewie continúa. Recordad, en los momentos más oscuros, la Fuerza nos puede guiar. Cualquier pista, por pequeña que sea, será de gran ayuda."
+    }
+  ]
+}

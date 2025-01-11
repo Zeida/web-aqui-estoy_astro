@@ -2,8 +2,14 @@
 /*SUPER IMPORTANTE PONER EN MAYUS LA PRIMERA LETRA DEL COMPONENTE*/
 import LostCard from "../components/elements/LostCard.astro";
 import lostAnimals from "../data/lostanimals.json";
+import Post from "../components/Post.astro";
+import post from "../data/post.json";
 ---
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - ¡Aquí Estoy!</title>
+</head>
 <div class="container-lostanimals">
   <h1>Mascotas que quieren volver a casa</h1>
   <select name="city" id="city">
@@ -20,6 +26,12 @@ import lostAnimals from "../data/lostanimals.json";
         <LostCard lostanimal={animal} />
       ))
     }
+  
+  </div>
+  <div class="lost-animal-post">
+  
+        <Post post={post}/>
+
   
   </div>
 </div>
