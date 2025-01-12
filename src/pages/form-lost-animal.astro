@@ -1,6 +1,7 @@
 ---
 import MainHeader from "../components/MainHeader.astro";
 import "../styles/global.css";
+import Star from "../icons/star.astro"
 ---
 
 <head>
@@ -18,13 +19,16 @@ import "../styles/global.css";
       <input type="text" name="name" id="">
     </label>
     
-    <label>Última vez visto </label>
+
+    <label class="label-group a">Última vez visto</label>
+    <span><Star/>
     <label for="date"> Fecha:
       <input type="date" name="date">
-    </label>
+    </label></span>
+    <span><Star/>
     <label for="time">Hora:
       <input type="text" placeholder="Ejemplo 00:00">
-    </label>
+    </label></span>
 
     <label for="country">País:
       <input type="text" name="country">
@@ -38,29 +42,26 @@ import "../styles/global.css";
       <input type="text" name="street">
     </label>
     
-    <label class="contact-container">Contacto</label>
-    <label for="number">Número:
+    <label class="label-group b">Contacto</label>
+    <span><Star/><label for="number">Número:
       <input type="text" name="number">
-    </label> 
-    <label for="email">Email:
+    </label> </span>
+    <span><Star/><label for="email">Email:
       <input type="text" name="email">
-    </label>
+    </label></span>
         
     <label for="description">Descripción:
       <input type="text" name="description">
-      <p> Pequeña descripción sobre su compañera/o (datos que puedan distinguirle)</p>
+      <p class="text-form"><strong> Pequeña descripción sobre su compañera/o (datos que puedan distinguirle)</strong></p>
       </label>
 
     <label for="file">Foto:
       <input type="file" name="file">
-      <p>Asegúrese de que se le distinga
-        lo mejor posible,</p>
-      <p>una buena foto da más
-        oportunidades de encontrarle</p>
+      <p class="text-form"><strong>Asegúrese de que se le distinga
+        lo mejor posible, una buena foto da más
+        oportunidades de encontrarle</strong></p>
     </label>
   </form>
-
-  <p class="required-field">*campo obligatorio</p>
   <button id="form-submit">Finalizar</button>
 </div>
 </div>
@@ -99,16 +100,35 @@ import "../styles/global.css";
     margin-bottom: 1rem;
     color: var(--color-azul-oscuro);
 
-    & input {
+      & input {
       border: 1px solid var(--color-azul-oscuro);
       background: var(--color-celeste);
       height: 25px;
       font-size: 1rem;
       padding: 4px 10px;
       color: var(--color-azul-oscuro);
+      }
     }
+    & .label-group{
+      margin-top: 10px;
+    }
+
+    & .text-form {
+      font-size: 13px;
     }
   }
+
+  & #form-submit {
+      background-color: var(--color-azul-claro);
+      font-family: Montserrat, sans-serif;
+      color: var(--color-celeste);
+      font-size: 1rem;
+      border : 2px var(--color-azul-oscuro);
+      filter: drop-shadow(0 0 0.2rem rgb(18, 99, 109));
+      padding: 10px;
+      border-radius: 10px;
+      width: 6rem;
+    }
 }
 
 </style>
