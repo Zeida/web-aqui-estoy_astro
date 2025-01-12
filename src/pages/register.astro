@@ -1,9 +1,9 @@
 --- 
-import google from "../assets/google.svg?url";
-import petlogin from "../assets/pet-login.svg?url";
+import petlogin from "/images/petLogin.svg?url";
 import "../styles/global.css";
 import MainHeader from "../components/MainHeader.astro";
-import eyetracking from "../assets/eye-tracking.svg?url";
+import EyeTracking from "../icons/eye-tracking.astro";
+import { Icon } from 'astro-icon/components'
 ---
 
 <head>
@@ -25,7 +25,7 @@ import eyetracking from "../assets/eye-tracking.svg?url";
     <form class="login-form">
       <h2>Únete a nuestra comunidad</h2>
       <button class="google-login">
-        <img src={google} alt="Google Icon" class="svg-icon" /> Continuar con Google
+        <Icon name="google" /> Continuar con Google
       </button>
       <div class="or-container">
         <div class="separator-line"></div>
@@ -37,7 +37,7 @@ import eyetracking from "../assets/eye-tracking.svg?url";
       <label class="form-label password-label">
         Contraseña
         <button type="button" class="password-toggle">
-          <img src={eyetracking} alt="Mostrar/Ocultar contraseña" />
+          <EyeTracking/>
         </button>
       </label>
       <input type="password" required class="input-field" />
