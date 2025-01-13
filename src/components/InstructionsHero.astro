@@ -35,9 +35,8 @@ import instructions from "../data/instructions.json";
 </div>
 
 <style>
-
-  .landing-page-2{
-    padding: 100px 0 130px 0;
+  .landing-page-2 {
+    
   }
   .title {
     display: flex;
@@ -47,7 +46,23 @@ import instructions from "../data/instructions.json";
     font-size: 50px;
     font-style: normal;
     color: var(--color-azul-oscuro);
+    & h2 {
+      margin : 45px 0 10px 0;
+    }
   }
+
+  .using-benefits-section {
+    position : relative;
+    & .back-line {
+    width: 100%;
+    height: 15rem;
+    background-color: var(--color-azul-oscuro);
+    position : absolute;
+    z-index: -1;
+    top : 100px;
+  }
+  }
+  
   .card-container {
     display: flex;
     flex-direction: row;
@@ -83,6 +98,5 @@ import instructions from "../data/instructions.json";
     display: flex;
     justify-content: center;
     font-size: 32px;
-    margin: 30px;
   }
 </style>
