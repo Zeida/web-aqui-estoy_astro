@@ -43,19 +43,5 @@
       "viewsNumber": 1570,
       "numberCollaborations": 78
     }
-  },{
-    "testimonyHead": {
-      "profilePic": "images/profile5.jpg",
-      "nameAgePet": "Coco (3 años)",
-      "lostAddress": "Telde, Las Palmas"
-    },
-    "testimonyBody": {
-      "testimonyPic": "images/testimony6.jpg",
-      "ownerThanks": "Nunca pensé que volvería a ver a Coco. ¡Gracias a todos los que compartieron y ayudaron en la búsqueda!"
-    },
-    "testimonyCardStats": {
-      "viewsNumber": 1570,
-      "numberCollaborations": 78
-    }
   }
 ]
