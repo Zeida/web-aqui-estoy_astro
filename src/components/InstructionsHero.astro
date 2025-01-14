@@ -2,6 +2,7 @@
 
 import InstructionCard from "../components/elements/InstructionCard.astro";
 import instructions from "../data/instructions.json";
+import catPlaying from "../icons/catPlaying.svg?inline";
 ---
 
 <div class="landing-page-2">
@@ -35,21 +36,20 @@ import instructions from "../data/instructions.json";
 </div>
 
 <style>
-  .landing-page-2 {
-    
-  }
-  .title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  
+
+.title {
+  display : flex;
+  justify-content: center;
+  & h2 {
+    margin : 45px 0 0px 0;
     font-family: "Luckiest Guy", cursive;
-    font-size: 50px;
+    font-size: 60px;
     font-style: normal;
     color: var(--color-azul-oscuro);
-    & h2 {
-      margin : 45px 0 10px 0;
-    }
   }
+  
+}
 
   .using-benefits-section {
     position : relative;
@@ -67,7 +67,7 @@ import instructions from "../data/instructions.json";
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 30px 0 30px 0;
+    padding: 40px 0 30px 0;
   }
 
   .call-to-action {
