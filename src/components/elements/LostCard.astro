@@ -8,6 +8,7 @@ import ClockIcon from "../../icons/ClockIcon.astro";
 ---
 
 <div class="lostanimal-card">
+  <a href={`/post/${lostanimal.id}`} class="lostanimal-card"></a>
     <div class="head-card">
         <h2>{lostanimal.nameAgePet}</h2>
         <PhoneIcon/>
@@ -58,6 +59,4 @@ import ClockIcon from "../../icons/ClockIcon.astro";
         }
         }
     }
-    
 }   
-</style>
