@@ -40,9 +40,14 @@ import "../styles/global.css";
 
 .container-lostanimals{
   display : grid;
+  flex-direction : column;
   justify-content: center;
+  & h1{
+    margin : auto;;
+  }
 }
 .lost-animal-cards {
+  width : 1200px;
   display : grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   margin : 30px;
