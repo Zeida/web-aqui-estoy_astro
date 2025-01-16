@@ -14,11 +14,11 @@ import ClockIcon from "../../icons/ClockIcon.astro";
     </div>
     <img src={lostanimal.profilePic} alt="">
     <div class="footer-card">
-        <div class="footer-container">
+        <div class="footer-container clock">
             <ClockIcon/>
             <p>{lostanimal.lostAddress}</p>
         </div>
-        <div class="footer-container">
+        <div class="footer-container flag">
             <FlagWaving/>
             <p>{lostanimal.lastTimeSeen}</p>
         </div>
@@ -50,6 +50,12 @@ import ClockIcon from "../../icons/ClockIcon.astro";
         margin: 10px;
         align-items: flex-start;
         justify-content: baseline;
+        &.clock {
+            margin-bottom: 0;
+        }
+        &.flag {
+            margin-top: 0;
+        }
         }
     }
     
