@@ -1,7 +1,9 @@
 ---
 const { lostanimal } = Astro.props;
 
+import FlagWaving from "../../icons/FlagWaving.astro";
 import PhoneIcon from "../../icons/PhoneIconPls.astro"
+import ClockIcon from "../../icons/ClockIcon.astro";
 
 ---
 
@@ -12,29 +14,44 @@ import PhoneIcon from "../../icons/PhoneIconPls.astro"
     </div>
     <img src={lostanimal.profilePic} alt="">
     <div class="footer-card">
-        <p>{lostanimal.lostAddress}</p>
-    <p>{lostanimal.lastTimeSeen}</p>
+        <div class="footer-container">
+            <ClockIcon/>
+            <p>{lostanimal.lostAddress}</p>
+        </div>
+        <div class="footer-container">
+            <FlagWaving/>
+            <p>{lostanimal.lastTimeSeen}</p>
+        </div>
+        
     </div>
     
 </div>
 
 <style>
-    .lostanimal-card{
+.lostanimal-card{
+    border-radius: 25px;
+    display : flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background-color: var(--color-celeste);
+    & .head-card {
         display : flex;
-        flex-direction: column;
-        width: 300px;
-        height: 400px;
-        background-color: var(--color-celeste);
-
-        & .head-card {
-            display : flex;
-            justify-content: space-between;
-            & 
-        }
-        & img {
-            max-width: 200px;
-            max-height: 300px;
-        }
-
+        justify-content: space-around;
     }
+    & img {
+        max-width: 100%;
+        height: 200px;
+    }   
+    & .footer-card {
+        margin : 0px 20px;
+        & .footer-container {
+        display: flex;
+        margin: 10px;
+        align-items: flex-start;
+        justify-content: baseline;
+        }
+    }
+    
+}   
 </style>
