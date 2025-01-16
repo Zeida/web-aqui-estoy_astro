@@ -1,8 +1,9 @@
 ---
 import Post from "../../components/Post.astro";
 import postDataRaw from "../../data/post.json";
-
-
+import Header from "../../components/MainHeader.astro";
+import FooterHero from "../../components/FooterHero.astro";
+import "../../styles/global.css";  
 
 export async function getStaticPaths() {
     const postData = Array.isArray(postDataRaw) ? postDataRaw : [postDataRaw];
@@ -18,7 +19,6 @@ const post = postData.find((p) => p.id === id);
 if (!post) {
   throw new Error("Post no encontrado.");
 }
-
 ---
 
 <head>
@@ -28,9 +28,11 @@ if (!post) {
 </head>
 
 <html>
+  <Header />
   <main>
     <div class="lost-animal-post">
         <Post post={post} />
     </div>
   </main>
+  <FooterHero/>
 </html>
