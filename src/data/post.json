@@ -1,28 +1,135 @@
-{
-  "image": "images/Chewie.png",
-  "name": "Chewie, golden retriever",
-  "location": "Endor, bosque lunar",
-  "date": "11/01/2025 a las 14:30",
-  "contact": "333444555 / chewiefinder@republica.com",
-  "description": "Se ha perdido un Golden Retriever en los bosques de Endor. Es de tamaño grande, tiene pelaje dorado brillante como los soles de este planeta y es muy cariñoso. Se llama Chewie y lleva un collar verde con una placa de identificación galáctica. Si lo ves o tienes información sobre su paradero, por favor, contacta con nosotros a través de la red holocomunicante.",
-  "reward": "500 créditos galácticos",
-  "author": "Obi-Wan Kenobi, maestro Jedi",
-  "comments": [
-    {
-      "name": "Darth Vader",
-      "text": "He detectado una presencia extraña en la luna forestal de Endor. El perro que mencionas podría ser Chewie. ¿Tiene alguna marca especial o se parece al perro de un Wookiee? ¡Que la Fuerza nos ayude a encontrarlo!"
-    },
-    {
-      "name": "Yoda",
-      "text": "Perdido, tu perro está. En los árboles de Endor, su camino podría estar. Sabio o juguetón es, como un joven Jedi. Información importante, debes compartir."
-    },
-    {
-      "name": "Han Solo",
-      "text": "¡Vaya! Estuve en las afueras de la luna de Endor, pero no vi a ningún Golden Retriever. Si Chewie es tan fiel como un Wookiee, seguro lo encontraremos. ¿Puedo ofrecer una recompensa en créditos galácticos? ¡Que el Halcón Milenario nos ayude!"
-    },
-    {
-      "name": "Obi-Wan Kenobi",
-      "text": "Gracias por sus comentarios. La búsqueda de Chewie continúa. Recordad, en los momentos más oscuros, la Fuerza nos puede guiar. Cualquier pista, por pequeña que sea, será de gran ayuda."
-    }
-  ]
-}
+[
+  {
+    "id": "1",
+    "image": "/images/Chewie.png",
+    "name": "Chewie, golden retriever",
+    "location": "Endor, bosque lunar",
+    "date": "11/01/2025 a las 14:30",
+    "contact": "333444555 / chewiefinder@republica.com",
+    "description": "Se ha perdido un Golden Retriever en los bosques de Endor. Es de tamaño grande, tiene pelaje dorado brillante como los soles de este planeta y es muy cariñoso. Se llama Chewie y lleva un collar verde con una placa de identificación galáctica. Si lo ves o tienes información sobre su paradero, por favor, contacta con nosotros a través de la red holocomunicante.",
+    "reward": "500 créditos galácticos",
+    "author": "Obi-Wan Kenobi, maestro Jedi",
+    "comments": [
+      {
+        "name": "Darth Vader",
+        "text": "He detectado una presencia extraña en la luna forestal de Endor. El perro que mencionas podría ser Chewie. ¿Tiene alguna marca especial o se parece al perro de un Wookiee? ¡Que la Fuerza nos ayude a encontrarlo!"
+      },
+      {
+        "name": "Yoda",
+        "text": "Perdido, tu perro está. En los árboles de Endor, su camino podría estar. Sabio o juguetón es, como un joven Jedi. Información importante, debes compartir."
+      },
+      {
+        "name": "Han Solo",
+        "text": "¡Vaya! Estuve en las afueras de la luna de Endor, pero no vi a ningún Golden Retriever. Si Chewie es tan fiel como un Wookiee, seguro lo encontraremos. ¿Puedo ofrecer una recompensa en créditos galácticos? ¡Que el Halcón Milenario nos ayude!"
+      },
+      {
+        "name": "Obi-Wan Kenobi",
+        "text": "Gracias por sus comentarios. La búsqueda de Chewie continúa. Recordad, en los momentos más oscuros, la Fuerza nos puede guiar. Cualquier pista, por pequeña que sea, será de gran ayuda."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "image": "/images/Snuggles.png",
+    "name": "Snuggles, bichón maltés",
+    "location": "C-137, Tierra",
+    "date": "11/01/2025 a las 18:00",
+    "contact": "555666777 / snugglesfindme@dimensionportal.com",
+    "description": "Se ha perdido un bichón maltés llamado Snuggles en C-137, Tierra, después de una de esas malditas excursiones interdimensionales que siempre terminan mal. Es un perro pequeño, de pelaje blanco esponjoso, y lleva un collar azul con la etiqueta 'Snuggles'. Si lo ves, avísanos. No sé cómo, pero estoy seguro de que está en alguna dimensión rarísima, y necesitamos recuperarlo antes de que cause más líos interdimensionales.",
+    "reward": "10.000 unidades de Plutonio",
+    "author": "Rick Sánchez, científico interdimensional con demasiado tiempo libre",
+    "comments": [
+      {
+        "name": "Morty Smith",
+        "text": "¡Oh, Dios! ¡Abuelo, no! ¿En serio hemos perdido a Snuggles en una dimensión? ¡¿Qué pasa con tu sentido común?! Estuve buscando por ahí, pero vi a un alienígena en la dimensión Zeta-5, ¡y casi me mata! No estoy seguro si era Snuggles, pero... ¿tiene alguna marca especial que podamos rastrear en otras dimensiones? ¡Tienes que encontrarlo rápido, abuelo!"
+      },
+      {
+        "name": "Beth Sánchez",
+        "text": "Rick, esto es una locura. Estuve en la estación de trenes y no vi ni rastro de Snuggles, pero te prometo que si lo encuentro en alguna de esas dimensiones locas, ¡te lo traigo de vuelta sin hacerle nada raro! Bueno... al menos hasta que me canses con tus historias de universos paralelos."
+      },
+      {
+        "name": "Summer Smith",
+        "text": "Típico. El perro se pierde en alguna dimensión y ahora tenemos que ir a buscarlo. Como si mi vida no fuera ya suficientemente estresante con toda esta locura interdimensional, ¡tengo que encontrar a Snuggles también! Aunque... si está en una dimensión donde no pueda alcanzarlo, podría ser el mejor día de mi vida."
+      },
+      {
+        "name": "Rick Sánchez",
+        "text": "Bueno, bueno, bueno... parece que nadie puede hacer nada sin que me den la lata. ¡¿No ven que estoy en medio de un experimento?! ¡Pero sí, lo encontraré, porque lo necesito para mis investigaciones sobre el caos interdimensional! Si alguien lo ve, mándenme una señal a través de algún portal, y recuerden, no me hagan perder tiempo. ¡No tenemos todo el maldito día!"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "image": "/images/toto_profile.png",
+    "name": "Toto (4 años), perro",
+    "location": "Kansas, Tierra de Oz",
+    "date": "08/12/2022",
+    "contact": "123456789 / toto@perdido.com",
+    "description": "Toto, un perrito de 4 años, se ha perdido en Kansas, Tierra de Oz. Es pequeño, de pelaje marrón y siempre lleva una bufanda roja. Es un compañero leal y amigable, por lo que si lo ves, por favor avísanos. ¡Lo estamos buscando con desesperación!",
+    "reward": "300 dólares",
+    "author": "Dorothy Gale",
+    "comments": [
+      {
+        "name": "Glinda la Buena",
+        "text": "He buscado a Toto cerca de la casa de Dorothy, pero no lo encontré. Sin embargo, seguiré buscando."
+      },
+      {
+        "name": "El Mago de Oz",
+        "text": "He visto un perro con esas características cerca del bosque de Esmeralda. Tal vez pueda ser Toto. Intentaré seguirlo."
+      },
+      {
+        "name": "El Espantapájaros",
+        "text": "¡He estado buscando a Toto por toda la ciudad! Si alguien lo encuentra, avísenos. No podemos dejarlo solo."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "image": "/images/hedwig_profile.png",
+    "name": "Hedwig (5 años), lechuza",
+    "location": "Hogwarts, Escocia",
+    "date": "10/12/2022",
+    "contact": "987654321 / hedwig@perdida.com",
+    "description": "Hedwig es una lechuza blanca con plumas mágicas, perdida en los alrededores de Hogwarts, Escocia. Tiene una apariencia majestuosa y es muy fiel. Si la has visto o tienes información, por favor avísanos. ¡Es un animal muy querido!",
+    "reward": "2000 galeones",
+    "author": "Harry Potter",
+    "comments": [
+      {
+        "name": "Hermione Granger",
+        "text": "Hedwig ha sido una parte importante de nuestras vidas. Estoy buscando en el Bosque Prohibido. ¿Alguien la ha visto por ahí?"
+      },
+      {
+        "name": "Ron Weasley",
+        "text": "He estado buscando a Hedwig en el castillo, pero no la he encontrado. ¡Espero que regrese pronto!"
+      },
+      {
+        "name": "Albus Dumbledore",
+        "text": "Estoy confiado en que Hedwig encontrará el camino de regreso. Mientras tanto, sigo investigando cualquier pista."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "image": "/images/stitch_profile.png",
+    "name": "Stitch (626), perro",
+    "location": "Kauai, Hawaii",
+    "date": "13/12/2022",
+    "contact": "444555666 / stitch@perdido.com",
+    "description": "Stitch, un perro especial con pelaje azul y orejas grandes, se ha perdido en Kauai, Hawaii. Es muy juguetón y tiene un gran corazón. Si lo ves o tienes alguna información sobre su paradero, por favor, contacta con nosotros. ¡Lo estamos buscando intensamente!",
+    "reward": "1500 dólares",
+    "author": "Lilo Pelekai",
+    "comments": [
+      {
+        "name": "Jumbaa Jookiba",
+        "text": "Lo he estado buscando en la isla, pero no lo he encontrado. ¡Espero que alguien lo vea pronto!"
+      },
+      {
+        "name": "Pleakley",
+        "text": "He estado revisando la playa, pero no lo he visto. ¡Pero seguimos buscando con esperanza!"
+      },
+      {
+        "name": "Lilo Pelekai",
+        "text": "¡Por favor, ayúdennos a encontrar a Stitch! Lo queremos mucho y lo necesitamos de vuelta."
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+---
+import Post from "../../components/Post.astro";
+import postDataRaw from "../../data/post.json";
+
+
+
+export async function getStaticPaths() {
+    const postData = Array.isArray(postDataRaw) ? postDataRaw : [postDataRaw];
+  return postData.map((post) => ({
+    params: { id: String(post.id) },
+  }));
+}
+const { id } = Astro.params;
+
+const postData = Array.isArray(postDataRaw) ? postDataRaw : [postDataRaw];
+const post = postData.find((p) => p.id === id);
+
+if (!post) {
+  throw new Error("Post no encontrado.");
+}
+
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mascota Perdida - ¡Aquí Estoy!</title>
+</head>
+
+<html>
+  <main>
+    <div class="lost-animal-post">
+        <Post post={post} />
+    </div>
+  </main>
+</html>
