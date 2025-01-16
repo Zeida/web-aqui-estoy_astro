@@ -1,17 +1,10 @@
 [
     {
       "id": "1",
-<<<<<<< HEAD
       "profilePic": "images/Chewie.webp",
       "nameAgePet": "Luna (2 años)",
       "lostAddress": "Moya, Las Palmas",
       "lastTimeSeen": "2022-12-15"
-=======
-      "profilePic": "images/Chewie.png",
-      "nameAgePet": "Chewie (2 años)",
-      "lostAddress": "Endor, bosque lunar",
-      "lastTimeSeen": "11/01/2025"
->>>>>>> 0ec0c46ce92b724daf076a968310b047816ffced
     },
     {
         "id": "2",

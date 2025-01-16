@@ -4,28 +4,35 @@ const { lostanimal } = Astro.props;
 import FlagWaving from "../../icons/FlagWaving.astro";
 import PhoneIcon from "../../icons/PhoneIconPls.astro"
 import ClockIcon from "../../icons/ClockIcon.astro";
-
+import TextIcon from "../../icons/TextIcon.astro";
 ---
 
 <div class="lostanimal-card">
-<<<<<<< HEAD
-  <a href={`/post/${lostanimal.id}`} class="lostanimal-card"> </a>
-=======
-  <a href={`/post/${lostanimal.id}`} class="lostanimal-card">
->>>>>>> 0ec0c46ce92b724daf076a968310b047816ffced
+   </a>
     <div class="head-card">
         <h2>{lostanimal.nameAgePet}</h2>
-        <PhoneIcon/>
+        <button><PhoneIcon/></button>
+        
     </div>
+    
     <img class="contain" src={lostanimal.profilePic} alt="">
+  
     <div class="footer-card">
         <div class="footer-container clock">
             <ClockIcon/>
             <p>{lostanimal.lostAddress}</p>
         </div>
-        <div class="footer-container flag">
-            <FlagWaving/>
-            <p>{lostanimal.lastTimeSeen}</p>
+        <div class="footer-container bottom">
+          <div class="flag"><FlagWaving/>
+            <p>{lostanimal.lastTimeSeen}</p></div>
+            <div class="chat">
+              <a href={`/post/${lostanimal.id}`} class="lostanimal-card">
+                <TextIcon/>
+              </a>
+            </div>
+            
+            
+          </a>
         </div>
     </div>
     </a>
@@ -33,38 +40,65 @@ import ClockIcon from "../../icons/ClockIcon.astro";
 
 <style>
 .lostanimal-card{
-    border-radius: 25px;
-    display : flex;
-    flex-direction: column;
-    width: 300px;
-    height: 400px;
+  margin : 30px;
+  font-family: Montserrat, sans-serif;
+  border-radius: 25px;
+  display : flex;
+  flex-direction: column;
+  width: 350px;
+  max-height: 600px;
+  background-color: var(--color-celeste);
+  & button {
+    padding : 0;
+    margin : 0;
     background-color: var(--color-celeste);
-    & .head-card {
-        display : flex;
-        justify-content: space-around;
-    }
-    & img {
-        max-width: 100%;
-        max-height: 200px;
-        &.contain {
-          object-fit: cover;
-        }
-    }   
-    & .footer-card {
-        margin : 0px 20px;
-        & .footer-container {
-        display: flex;
-        margin: 10px;
-        align-items: flex-start;
-        justify-content: baseline;
+    border : none;
+    border-radius: 25px;
+  }
+  & .head-card {
+      display : flex;
+      justify-content: space-around;
+      margin : 10px 0;
+  } & h2 {
+    margin: 10px;
+  }
+  & img {
+      max-width: 100%;
+      max-height: 250px;
+      &.contain {
+        object-fit: cover;
+      }
+  }   
+  & .footer-card {
+      margin : 0px 20px;
+      & .footer-container {
+      display: flex;
+      margin: 10px;
+      align-items: flex-start;
+      justify-content: baseline;
         &.clock {
-            margin-bottom: 0;
+          margin-bottom: 0;
         }
-        &.flag {
-            margin-top: 0;
+        &.bottom {
+          display : flex;
+          justify-content: space-between;
+          & a{
+          margin : 0;
+          max-height: 33px;
+          max-width: 33px;
+        }
+        & .flag {
+          display : flex;
+          
+        }
+        & .chat {
+          display : flex; 
+          justify-content: flex-end;
         }
         }
-    }
+        
+      }
+  }
     
 }   
 </style>

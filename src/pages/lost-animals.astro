@@ -40,16 +40,17 @@ import "../styles/global.css";
 
 .container-lostanimals{
   display : grid;
-  flex-direction : column;
-  justify-content: center;
+  justify-items: center;
+  font-family: Montserrat, sans-serif;
   & h1{
-    margin : auto;;
+    margin : 50px 0;
+    color: var(--color-celeste);
   }
 }
 .lost-animal-cards {
-  width : 1200px;
+  width : 1400px;
   display : grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin : 30px;
 }
 
