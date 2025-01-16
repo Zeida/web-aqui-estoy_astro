@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "profilePic": "images/Chewie.png",
+      "profilePic": "images/Chewie.webp",
       "nameAgePet": "Luna (2 años)",
       "lostAddress": "Moya, Las Palmas",
       "lastTimeSeen": "2022-12-15"
@@ -15,21 +15,21 @@
       },
     {
       "id": "3",
-      "profilePic": "images/toto_profile.png",
+      "profilePic": "images/toto_profile.webp",
       "nameAgePet": "Toto (4 años)",
       "lostAddress": "Kansas, Tierra de Oz",
       "lastTimeSeen": "2022-12-08"
     },
     {
       "id": "4",
-      "profilePic": "images/hedwig_profile.png",
+      "profilePic": "images/hedwig_profile.webp",
       "nameAgePet": "Hedwig (5 años)",
       "lostAddress": "Hogwarts, Escocia",
       "lastTimeSeen": "2022-12-10"
     },
     {
       "id": "5",
-      "profilePic": "images/stitch_profile.png",
+      "profilePic": "images/stitch_profile.webp",
       "nameAgePet": "Stitch (626)",
       "lostAddress": "Kauai, Hawaii",
       "lastTimeSeen": "2022-12-13"

@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "image": "/images/Chewie.png",
+    "image": "/images/Chewie.webp",
     "name": "Chewie, golden retriever",
     "location": "Endor, bosque lunar",
     "date": "11/01/2025 a las 14:30",
@@ -59,7 +59,7 @@
   },
   {
     "id": "3",
-    "image": "/images/toto_profile.png",
+    "image": "/images/toto_profile.webp",
     "name": "Toto (4 años), perro",
     "location": "Kansas, Tierra de Oz",
     "date": "08/12/2022",
@@ -84,7 +84,7 @@
   },
   {
     "id": "4",
-    "image": "/images/hedwig_profile.png",
+    "image": "/images/hedwig_profile.webp",
     "name": "Hedwig (5 años), lechuza",
     "location": "Hogwarts, Escocia",
     "date": "10/12/2022",
@@ -109,7 +109,7 @@
   },
   {
     "id": "5",
-    "image": "/images/stitch_profile.png",
+    "image": "/images/stitch_profile.webp",
     "name": "Stitch (626), perro",
     "location": "Kauai, Hawaii",
     "date": "13/12/2022",

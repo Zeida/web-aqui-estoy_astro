@@ -8,12 +8,12 @@ import ClockIcon from "../../icons/ClockIcon.astro";
 ---
 
 <div class="lostanimal-card">
-  <!--<a href={`/post/${lostanimal.id}`} class="lostanimal-card"> -->
+  <a href={`/post/${lostanimal.id}`} class="lostanimal-card"> </a>
     <div class="head-card">
         <h2>{lostanimal.nameAgePet}</h2>
         <PhoneIcon/>
     </div>
-    <img src={lostanimal.profilePic} alt="">
+    <img class="contain" src={lostanimal.profilePic} alt="">
     <div class="footer-card">
         <div class="footer-container clock">
             <ClockIcon/>
@@ -40,7 +40,10 @@ import ClockIcon from "../../icons/ClockIcon.astro";
     }
     & img {
         max-width: 100%;
-        height: 200px;
+        max-height: 200px;
+        &.contain {
+          object-fit: cover;
+        }
     }   
     & .footer-card {
         margin : 0px 20px;
