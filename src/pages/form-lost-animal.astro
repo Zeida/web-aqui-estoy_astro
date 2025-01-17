@@ -21,35 +21,28 @@ import Star from "../icons/star.astro"
     
 
     <label class="label-group a">Última vez visto</label>
-    <span><Star/>
-    <label for="date"> Fecha:
+    <label for="date"> <em>Fecha:</em>
       <input type="date" name="date">
-    </label></span>
-    <span><Star/>
-    <label for="time">Hora:
+    </label>
+    <label for="time"><em>Hora:</em>
       <input type="text" placeholder="Ejemplo 00:00">
-    </label></span>
-
+    </label>
     <label for="country">País:
       <input type="text" name="country">
     </label>
-
     <label for="city">Ciudad:
       <input type="text" name="city">
     </label>
-
     <label for="street">Calle:
       <input type="text" name="street">
-    </label>
-    
+    </label>  
     <label class="label-group b">Contacto</label>
-    <span><Star/><label for="number">Número:
+    <label for="number"><em>Número:</em>
       <input type="text" name="number">
-    </label> </span>
-    <span><Star/><label for="email">Email:
-      <input type="text" name="email">
-    </label></span>
-        
+    </label> 
+    <label for="email"><em>Email:</em>
+    <input type="text" name="email">
+    </label>      
     <label for="description">Descripción:
       <input type="text" name="description">
       <p class="text-form"><strong> Pequeña descripción sobre su compañera/o (datos que puedan distinguirle)</strong></p>
@@ -107,6 +100,9 @@ import Star from "../icons/star.astro"
       font-size: 1rem;
       padding: 4px 10px;
       color: var(--color-azul-oscuro);
+      &::placeholder{
+        color: var(--color-azul-oscuro);
+      }
       }
     }
     & .label-group{
