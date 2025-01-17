@@ -33,6 +33,7 @@ import TextIcon from "../../icons/TextIcon.astro";
 
 <style>
 .lostanimal-card{
+  filter: drop-shadow(0 0 0.1rem rgb(203, 213, 214));
   margin : 30px;
   font-family: Montserrat, sans-serif;
   border-radius: 25px;
@@ -53,7 +54,7 @@ import TextIcon from "../../icons/TextIcon.astro";
     max-width: 50px;
     max-height: 50px;
     &:hover {
-      background-color: var(--color-azul-medio);
+      background-color: var(--color-azul-claro);
       color : var(--color-celeste);
       transition: 1s;
     }
@@ -92,6 +93,7 @@ import TextIcon from "../../icons/TextIcon.astro";
           margin : 0;
           max-height: 33px;
           max-width: 33px;
+          filter : none;
         }
         & .flag {
           display : flex;
