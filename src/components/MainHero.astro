@@ -1,9 +1,9 @@
 ---
-import Header from "../components/MainHeader.astro";
+import MainHeader from "../components/MainHeader.vue";
 import girlCatIcon from "../icons/girl_with_cat.svg?inline";
 ---
 
-<Header />
+<MainHeader client:load />
 
 <div class="landing-page-1">
   <img src={girlCatIcon} alt="" />

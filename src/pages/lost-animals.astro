@@ -2,7 +2,7 @@
 /*SUPER IMPORTANTE PONER EN MAYUS LA PRIMERA LETRA DEL COMPONENTE*/
 import LostCard from "../components/elements/LostCard.astro";
 import lostAnimals from "../data/lostanimals.json";
-import Header from "../components/MainHeader.astro";
+import MainHeader from "../components/MainHeader.vue";
 import FooterHero from "../components/FooterHero.astro";
 import "../styles/global.css";  
 ---
@@ -11,7 +11,7 @@ import "../styles/global.css";
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>En búsqueda- ¡Aquí Estoy!</title>
 </head>
-<Header />
+<MainHeader client:load />
 <div class="container-lostanimals">
   <h1>Mascotas que quieren volver a casa</h1>
   <div class="select-cities">

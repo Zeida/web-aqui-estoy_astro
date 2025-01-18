@@ -1,38 +1,38 @@
 [
-    {
-      "id": "1",
-      "profilePic": "images/Chewie.webp",
-      "nameAgePet": "Chewie (2 años)",
-      "lostAddress": "Endor, bosque lunar",
-      "lastTimeSeen": "11/01/2025"
-    },
-    {
-        "id": "2",
-        "profilePic": "images/snuffles.webp",
-        "nameAgePet": "Snuggles (Edad desconocida)",
-        "lostAddress": "C-137, Tierra",
-        "lastTimeSeen": "2022-12-13"
-      },
-    {
-      "id": "3",
-      "profilePic": "images/toto_profile.webp",
-      "nameAgePet": "Toto (4 años)",
-      "lostAddress": "Kansas, Tierra de Oz",
-      "lastTimeSeen": "2022-12-08"
-    },
-    {
-      "id": "4",
-      "profilePic": "images/hedwig_profile.webp",
-      "nameAgePet": "Hedwig (5 años)",
-      "lostAddress": "Hogwarts, Escocia",
-      "lastTimeSeen": "2022-12-10"
-    },
-    {
-      "id": "5",
-      "profilePic": "images/stitch_profile.webp",
-      "nameAgePet": "Stitch (626)",
-      "lostAddress": "Kauai, Hawaii",
-      "lastTimeSeen": "2022-12-13"
-    }
+  {
+    "id": "1",
+    "profilePic": "images/Chewie.webp", // TODO: firebase Storage que suban las imagenes
+    "nameAgePet": "Chewie (2 años)",
+    "lostAddress": "Endor, bosque lunar",
+    "lastTimeSeen": "11/01/2025",
+    "uid": "kdpowekw109329045900dpwejpo" // TODO: firebase User UID
+  },
+  {
+    "id": "2",
+    "profilePic": "images/snuffles.webp",
+    "nameAgePet": "Snuggles (Edad desconocida)",
+    "lostAddress": "C-137, Tierra",
+    "lastTimeSeen": "2022-12-13"
+  },
+  {
+    "id": "3",
+    "profilePic": "images/toto_profile.webp",
+    "nameAgePet": "Toto (4 años)",
+    "lostAddress": "Kansas, Tierra de Oz",
+    "lastTimeSeen": "2022-12-08"
+  },
+  {
+    "id": "4",
+    "profilePic": "images/hedwig_profile.webp",
+    "nameAgePet": "Hedwig (5 años)",
+    "lostAddress": "Hogwarts, Escocia",
+    "lastTimeSeen": "2022-12-10"
+  },
+  {
+    "id": "5",
+    "profilePic": "images/stitch_profile.webp",
+    "nameAgePet": "Stitch (626)",
+    "lostAddress": "Kauai, Hawaii",
+    "lastTimeSeen": "2022-12-13"
+  }
 ]
-

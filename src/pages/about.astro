@@ -1,13 +1,13 @@
 ---
 import "../styles/global.css";
-import MainHeader from "../components/MainHeader.astro";
+import MainHeader from "../components/MainHeader.vue";
 ---
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - ¡Aquí Estoy!</title>
   </head>
-  <MainHeader />
+  <MainHeader client:load />
 <div class="about-page">
   <div class="about-header">
     <h1>Sobre Nosotras</h1>

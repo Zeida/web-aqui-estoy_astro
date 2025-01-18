@@ -1,5 +1,5 @@
 ---
-import MainHeader from "../components/MainHeader.astro";
+import MainHeader from "../components/MainHeader.vue";
 import "../styles/global.css";
 import Star from "../icons/star.astro"
 ---
@@ -9,7 +9,7 @@ import Star from "../icons/star.astro"
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>¡Aquí Estoy!</title>
 </head>
-<MainHeader />
+<MainHeader client:load />
 
 <div class="form-container">
   <h1>Formulario de búsqueda</h1>

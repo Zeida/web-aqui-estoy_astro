@@ -12,9 +12,11 @@
     "@astrojs/vue": "^5.0.5",
     "@fontsource/luckiest-guy": "^5.1.0",
     "@fontsource/montserrat": "^5.1.0",
+    "@nanostores/vue": "^0.11.0",
     "astro": "^5.1.1",
     "astro-icon": "^1.1.5",
     "firebase": "^11.2.0",
+    "nanostores": "^0.11.3",
     "rough-notation": "^0.5.1",
     "vue": "^3.5.13"
   },

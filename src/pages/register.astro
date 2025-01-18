@@ -1,7 +1,7 @@
 --- 
 import petlogin from "/images/petLogin.svg?url";
 import "../styles/global.css";
-import MainHeader from "../components/MainHeader.astro";
+import MainHeader from "../components/MainHeader.vue";
 import EyeTracking from "../icons/eye-tracking.astro";
 import { Icon } from 'astro-icon/components'
 ---
@@ -11,7 +11,7 @@ import { Icon } from 'astro-icon/components'
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registro - ¡Aquí Estoy!</title>
 </head>
-<MainHeader />
+<MainHeader client:load />
 <div class="split-screen">
   <div class="left-side">
     <h1>Tu comunidad, su camino a casa.</h1>

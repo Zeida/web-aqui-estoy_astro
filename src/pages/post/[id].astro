@@ -1,7 +1,7 @@
 ---
 import Post from "../../components/Post.astro";
 import postDataRaw from "../../data/post.json";
-import Header from "../../components/MainHeader.astro";
+import MainHeader from "../../components/MainHeader.vue";
 import FooterHero from "../../components/FooterHero.astro";
 import "../../styles/global.css";  
 
@@ -28,7 +28,7 @@ if (!post) {
 </head>
 
 <html>
-  <Header />
+  <MainHeader client:load />
   <main>
     <div class="lost-animal-post">
         <Post post={post} />
