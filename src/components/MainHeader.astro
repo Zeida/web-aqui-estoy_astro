@@ -6,9 +6,9 @@
     <p>¡AQUÍ ESTOY!</p>
     <div class="nav-links">
       <a href="/">Home</a>
-      <a href="lost-animals">En búsqueda</a>
-      <a href="found-animals">Encontrados</a>
-      <a href="about">Sobre nosotras ...</a>
+      <a href="/lost-animals">En búsqueda</a>
+      <a href="/found-animals">Encontrados</a>
+      <a href="/about">Sobre nosotras ...</a>
     </div>
   </nav>
 
