@@ -3,6 +3,7 @@ import "../styles/global.css";
 import MainHeader from "../components/MainHeader.astro";
 import EyeTracking from "../icons/eye-tracking.astro";
 import { Icon } from 'astro-icon/components';
+import LoginComponent from "../components/LoginComponent.vue";
 ---
 <head>
   <meta charset="UTF-8" />
@@ -30,21 +31,8 @@ import { Icon } from 'astro-icon/components';
           <div class="or-separator">o</div>
           <div class="separator-line"></div>
         </div>
-        <label class="form-label"
-          >Nombre de usuario o dirección de correo electrónico</label
-        >
-        <input type="email" required class="input-field" />
-        <label class="form-label password-label">
-          Contraseña
-          <button type="button" class="password-toggle">
-            <EyeTracking>
-          </button>
-        </label>
-        <input type="password" required class="input-field" />
-        <div class="form-links password">
-          <a href="#">¿Olvidaste tu contraseña?</a>
-        </div>
-        <button type="submit" class="login-button">Acceder</button>
+        
+        <client:only component={LoginComponent} />
         <div class="form-links signin">
           <a href="register">¿Aún no tienes cuenta? Regístrate</a>
         </div>
